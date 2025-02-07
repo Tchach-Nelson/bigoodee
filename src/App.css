@@ -1,0 +1,427 @@
+/*::::::::::::::::::::::::::::::::::::::::  Ajout de la police ::::::::::::::::::::::::::::::::::::::::::*/
+@font-face {
+    font-family: Montserrat;
+    src: url('font/Montserrat-VariableFont_wght.ttf');
+}
+
+* {
+    font-family: Montserrat;
+    text-decoration: none;
+}
+/*::::::::::::::::::::::::::::::::::::::::  Ajout de la police ::::::::::::::::::::::::::::::::::::::::::*/
+
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: white;
+    margin-top: 20px;
+}
+
+header span{
+    margin-left: 50px;
+}
+
+header span a {
+    color: black;
+}
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.bloc-presentation{
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-presentation{
+    width: 60%;
+}
+
+.text-presentation h1{
+    font-size: 38px;
+}
+
+.text-presentation h1 span {
+    color: #CB5A90;
+}
+
+.text-presentation p {
+    text-align: left;
+}
+
+.img-presentation {
+    width: 40%;
+    /* padding: 200px; */
+    margin-left: 200px;
+}
+
+.notation{
+    background-color: #CB5A90;
+    color: white;
+    padding: 25px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.notation .comment{
+    text-align: left;
+    width: 300px;
+    margin: 20px;
+
+}
+
+.notation .comment .stars{
+    margin-bottom: 10px;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.newsletter{
+    padding: 50px;
+    text-align: center;
+    margin-top: -50px;
+    background-color: #FEF6F9;
+}
+
+.newsletter h1{
+    /* text-align: center; */
+    font-size: 40px;
+    width: 800px;
+    margin-left: 20%;
+}
+
+.newsletter h1 span {
+    color: #CB5A90;
+}
+
+.types-newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.type-newsletter{
+    margin-left: 100px;
+    margin-right: 100px;  
+}
+
+.img-type{
+    display: block;
+    background-color: white;
+    padding: 100px;
+    height: 200px;
+    width: 100px;
+    /* border: 1px dotted red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.img-type p {
+    margin-top: 50px;
+    font-weight: bolder;
+}
+
+.newsletter .mail{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter .mail input{
+    width: 400px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.newsletter .mail input:focus {
+     outline: none;
+ }
+
+ .newsletter .mail span{
+    display: block;
+    background-color: #CB5A90;
+    width: 100px;
+    height: 44px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.inscrire{
+    background-color: #F1CFDF;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-inscrire{
+    width: 40%;
+    border-radius: 100%;
+}
+
+.text-inscrire{
+    width: 60%;
+}
+
+.text-inscrire h1{
+    font-size: 40px;
+}
+
+.text-inscrire h1  span{
+    color: #CB5A90;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.routine{
+    background-color: #CB5A90;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 100px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+    color: white;
+}
+
+.routine h3{
+    margin-top: -20px;
+    font-size: 25px;
+}
+
+.routine select{
+    height: 50px;
+    width: 800px;
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+}
+
+.routine input {
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    color: gray;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.faq{
+    text-align: center;
+    margin-top: 100px;
+    background-color: #FEF6F9;
+}
+
+.faq h1{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.faq p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-left:10% ;
+}
+
+.faq hr{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 45px;
+    border: 0.5px solid gray;
+}
+
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.conseil{
+    padding: 50px;
+    text-align: center;
+}
+
+.conseil h1{
+    font-size: 35px;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 50px;
+}
+
+.conseil h1 span{
+    color:  #CB5A90;
+}
+
+.option-conseil{
+    background-color: #F1CFDF;
+    padding: 50px;
+    border-radius: 20px;
+    height: 150px;
+    text-align: left;
+}
+
+.option-conseil input{
+    display: inline-block;
+    font-size: 500px;
+    width: 50px;
+}
+
+.option-conseil label {
+    font-size: 18px;
+}
+
+.conseil .mail {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conseil .mail input {
+    width: 400px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.conseil .mail input:focus {
+    outline: none;
+}
+
+.conseil .mail span {
+    display: block;
+    background-color: #CB5A90;
+    width: 100px;
+    height: 44px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+footer{
+    background-color: #CB5A90;
+    padding: 50px;
+    color: white;
+}
+
+.reseaux{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.autre{
+    display: flex;
+    align-items: top;
+    justify-content: left;
+    margin-bottom: 50px;
+}
+
+.text-autre{
+    width: 20%;;
+}
+
+.lien-autre {
+    width: 20% ;
+    margin-left: 50px;
+}
+
+.lien-autre a {
+    color: white;
+}
+
+.communaute{
+    text-align: center;
+}
+
+
+.communaute .mail {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.communaute .mail input {
+    width: 400px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.communaute .mail input:focus {
+    outline: none;
+}
+
+.communaute .mail span {
+    display: block;
+    background-color: white;
+    width: 100px;
+    height: 44px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
