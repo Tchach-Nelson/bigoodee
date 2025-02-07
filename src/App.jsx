@@ -1,11 +1,34 @@
 import { useState } from 'react'
 import './App.css'
-import { FaStar, FaPlusCircle, FaFacebook, } from "react-icons/fa"
+import { FaStar, FaPlusCircle, FaFacebook, FaMinusCircle  } from "react-icons/fa"
 
 function App() {
 
-    
+    const [openIndex, setOpenIndex] = useState(null);
 
+    const toggleAnswer = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
+    const faqData = [
+        {
+            question: "Qu'est-ce qui différencie Bigoodee des autres sources d'information capillaire ?",
+            answer: "Bigoodee offre des conseils basés sur des études scientifiques et des experts du domaine."
+        },
+        {
+            question: "Est-ce que les conseils de Bigoodee conviennent à tous les types de cheveux ?",
+            answer: "Oui, nous couvrons une large gamme de types de cheveux avec des recommandations adaptées."
+        },
+        {
+            question: "Comment puis-je poser des questions ou demander des conseils personnalisés ?",
+            answer: "Vous pouvez nous contacter via notre formulaire en ligne ou sur nos réseaux sociaux."
+        },
+        {
+            question: "Qu'est-ce que Bigoodee propose exactement ?",
+            answer: "Bigoodee propose des conseils, des analyses de produits et des routines adaptées à vos besoins capillaires."
+        }
+    ];
+    
     return (
         <div>
             <header>
@@ -151,7 +174,7 @@ function App() {
                 <input type="button" value="RECEVOIR MA ROUTINE" />
             </section>
 
-            <section className='faq'>
+            {/* <section className='faq'>
                 <h1>FAQ</h1>
 
                 <p>
@@ -179,10 +202,23 @@ function App() {
                     <span><FaPlusCircle color="black" size={20} /></span>
                 </p>
                 <hr />
+            </section> */}
 
-
-                {/* <FaPlusCircle color="red" size={20} /> */}
-            </section>
+            <section className="faq">
+            <h1>FAQ</h1>
+            {faqData.map((item, index) => (
+                <div key={index}>
+                    <p>
+                        <span>{item.question}</span>
+                        <span onClick={() => toggleAnswer(index)} style={{ cursor: "pointer", marginLeft: 10 }}>
+                            {openIndex === index ? <FaMinusCircle color="black" size={20} /> : <FaPlusCircle color="black" size={20} />}
+                        </span>
+                    </p>
+                    {openIndex === index && <p style={{ paddingLeft: 20, color: "#555" }}>{item.answer}</p>}
+                    <hr />
+                </div>
+            ))}
+        </section>
 
             <section className='conseil'>
                 <h1>Découvrez des conseils et astuces exclusifs pour prendre soin de vos cheveux grâce à nos <span> guides complets </span></h1>
